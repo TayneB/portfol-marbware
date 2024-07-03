@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -24,6 +24,67 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.nav-bar {
+  list-style-type: none; /* Remove bullets */
+  background-color: #ff0000; /* Dark background */
+  overflow: hidden; /* Clear floats */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: left; /* Space out items */
+}
+
+.nav-bar li {
+  float: left;
+  min-width: 6rem;
+}
+
+/* Style the links */
+.nav-bar li a {
+  display: block;
+  color: white; /* White text */
+  text-align: center;
+  padding: 0.25rem 0.625rem; /* Padding around the links */
+  text-decoration: none; /* Remove underline */
+  box-sizing: border-box;
+}
+
+.nav-bar li a.left {
+  background-color: rgb(0, 0, 0); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0 0, calc(100% - 0.625rem) 0, 100% 100%, 0.625rem 100%);
+}
+
+.nav-bar li a.right {
+  background-color: rgb(0, 0, 0); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0.625rem 0, 100% 0, calc(100% - 0.625rem) 100%, 0 100%);
+}
+
+/* Add a hover effect */
+.nav-bar li a.left:hover {
+  background-color: rgb(255, 0, 0); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0 0, calc(100% - 0.625rem) 0, 100% 100%, 0.625rem 100%);
+}
+
+.nav-bar li a.right:hover {
+  background-color: rgb(255, 0, 0); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0.625rem 0, 100% 0, calc(100% - 0.625rem) 100%, 0 100%);
+}
+
+.nav-bar li a.true {
+  background-color: rgb(58, 190, 40);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.625rem) 100%, 0.625rem 100%);
+}
+
+.nav-bar li a.true:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 @layer utilities {
