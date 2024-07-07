@@ -28,7 +28,7 @@ body {
 
 .nav-bar {
   list-style-type: none; /* Remove bullets */
-  background-color: #ff0000; /* Dark background */
+  background-color: #000000; /* Dark background */
   overflow: hidden; /* Clear floats */
   display: flex; /* Use flexbox for horizontal layout */
   justify-content: left; /* Space out items */
@@ -50,14 +50,14 @@ body {
 }
 
 .nav-bar li a.left {
-  background-color: rgb(0, 0, 0); /* Darker background on hover */
+  background-color: rgb(253, 0, 0); /* Darker background on hover */
   padding: 0.25rem 0.375rem;
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0 0, calc(100% - 0.625rem) 0, 100% 100%, 0.625rem 100%);
 }
 
 .nav-bar li a.right {
-  background-color: rgb(0, 0, 0); /* Darker background on hover */
+  background-color: rgb(255, 0, 0); /* Darker background on hover */
   padding: 0.25rem 0.375rem;
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0.625rem 0, 100% 0, calc(100% - 0.625rem) 100%, 0 100%);
@@ -79,12 +79,19 @@ body {
 }
 
 .nav-bar li a.true {
-  background-color: rgb(58, 190, 40);
-  clip-path: polygon(0 0, 100% 0, calc(100% - 0.625rem) 100%, 0.625rem 100%);
+  background-color: rgb(89, 255, 24);
+  clip-path: polygon(
+    5% 0,
+    95% 0,
+    calc(95% - 0.625rem) 95%,
+    calc(5% + 0.625rem) 95%
+  );
+  position: relative;
+  overflow: visible;
 }
 
 .nav-bar li a.true:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(24, 39, 255);
 }
 
 @layer utilities {
