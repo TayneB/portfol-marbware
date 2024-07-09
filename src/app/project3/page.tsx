@@ -2,7 +2,7 @@ import React from 'react'
 
 const Proj3Page: React.FC = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Yetans Emporium</h1>
     </div>
   )

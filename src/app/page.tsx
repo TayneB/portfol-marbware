@@ -4,7 +4,7 @@ import Link from 'react'
 
 export default function Home() {
   return (
-    <div>
+    <div className="page-content">
       <h1>Grovestreet</h1>
     </div>
   )
