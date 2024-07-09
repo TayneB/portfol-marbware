@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function Nav() {
   let [selectedHome, setSelectedHome] = useState('true')
@@ -9,6 +10,53 @@ export default function Nav() {
   let [selectedProj2, setSelectedProj2] = useState('right')
   let [selectedProj3, setSelectedProj3] = useState('right')
   let [selectedAbout, setSelectedAbout] = useState('right')
+  let [checker, setChecker] = useState(0)
+  let path = usePathname()
+  console.log(1)
+  if (checker === 0) {
+    switch (path) {
+      case '/project1':
+        setSelectedHome('left')
+        setSelectedProj1('true')
+        setSelectedProj2('right')
+        setSelectedProj3('right')
+        setSelectedAbout('right')
+        setChecker(1)
+        break
+      case '/project2':
+        setSelectedHome('left')
+        setSelectedProj1('left')
+        setSelectedProj2('true')
+        setSelectedProj3('right')
+        setSelectedAbout('right')
+        setChecker(1)
+        break
+      case '/project3':
+        setSelectedHome('left')
+        setSelectedProj1('left')
+        setSelectedProj2('left')
+        setSelectedProj3('true')
+        setSelectedAbout('right')
+        setChecker(1)
+        break
+      case '/about':
+        setSelectedHome('left')
+        setSelectedProj1('left')
+        setSelectedProj2('left')
+        setSelectedProj3('left')
+        setSelectedAbout('true')
+        setChecker(1)
+        break
+      default:
+        setSelectedHome('true')
+        setSelectedProj1('right')
+        setSelectedProj2('right')
+        setSelectedProj3('right')
+        setSelectedAbout('right')
+        setChecker(1)
+    }
+  }
+
   function handleClickHome() {
     setSelectedHome('true')
     setSelectedProj1('right')
