@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 0, 13, 8;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,12 +11,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 13, 8;
+    --background-end-rgb: 0, 13, 8;
   }
 }
 
 body {
+  margin: 1rem;
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -28,7 +30,7 @@ body {
 
 .nav-bar {
   list-style-type: none; /* Remove bullets */
-  background-color: #000000; /* Dark background */
+  background-color: #000d08; /* Dark background */
   overflow: hidden; /* Clear floats */
   display: flex; /* Use flexbox for horizontal layout */
   justify-content: left; /* Space out items */
@@ -97,8 +99,8 @@ body {
 
 /* Content Pages */
 .page-content {
-  background-color: rgb(89, 255, 24);
-  outline: rgb(89, 255, 24), solid, 0.2rem;
+  background-color: #001f0f;
+  /* outline: rgb(89, 255, 24), solid, 0.2rem; */
   margin: 0 0 0 0.23rem;
   max-width: 50rem;
   min-height: 30rem;
