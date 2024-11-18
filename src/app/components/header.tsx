@@ -95,48 +95,28 @@ export default function Nav() {
   return (
     <nav className={`nav-bar`}>
       <ul>
-        <li>
-          <Link
-            href="/"
-            className={`${selectedHome}`}
-            onClick={handleClickHome}
-          >
+        <li className={`${selectedHome}`}>
+          <Link href="/" onClick={handleClickHome}>
             home
           </Link>
         </li>
-        <li>
-          <Link
-            href="/project1"
-            className={`${selectedProj1}`}
-            onClick={handleClick1}
-          >
+        <li className={`${selectedProj1}`}>
+          <Link href="/project1" onClick={handleClick1}>
             project 1
           </Link>
         </li>
-        <li>
-          <Link
-            href="/project2"
-            className={`${selectedProj2}`}
-            onClick={handleClick2}
-          >
+        <li className={`${selectedProj2}`}>
+          <Link href="/project2" onClick={handleClick2}>
             project 2
           </Link>
         </li>
-        <li>
-          <Link
-            href="/project3"
-            className={`${selectedProj3}`}
-            onClick={handleClick3}
-          >
+        <li className={`${selectedProj3}`}>
+          <Link href="/project3" onClick={handleClick3}>
             project 3
           </Link>
         </li>
-        <li>
-          <Link
-            href="/about"
-            className={`${selectedAbout}`}
-            onClick={handleClickAbout}
-          >
+        <li className={`${selectedAbout}`}>
+          <Link href="/about" onClick={handleClickAbout}>
             about
           </Link>
         </li>
