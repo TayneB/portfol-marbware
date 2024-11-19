@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 0, 13, 8;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,12 +11,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 13, 8;
+    --background-end-rgb: 0, 13, 8;
   }
 }
 
 body {
+  margin: 1rem;
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -28,81 +30,152 @@ body {
 
 .nav-bar {
   list-style-type: none; /* Remove bullets */
-  background-color: #000000; /* Dark background */
-  overflow: hidden; /* Clear floats */
+  background-color: #000d08; /* Dark background */
+  overflow: visible; /* Clear floats */
   display: flex; /* Use flexbox for horizontal layout */
   justify-content: left; /* Space out items */
+  margin-bottom: 0rem;
 }
 
 .nav-bar li {
   float: left;
-  min-width: 6rem;
+  min-width: 8rem;
 }
 
 /* Style the links */
 .nav-bar li a {
   display: block;
-  color: white; /* White text */
+  color: rgb(0, 255, 127); /* White text */
+
   text-align: center;
   padding: 0.25rem 0.625rem; /* Padding around the links */
   text-decoration: none; /* Remove underline */
   box-sizing: border-box;
 }
 
-.nav-bar li a.left {
-  background-color: rgb(253, 0, 0); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
-  /* border: 0.125rem, solid, green; */
-  clip-path: polygon(0 0, calc(100% - 0.25rem) 0, 100% 100%, 0.25rem 100%);
-}
-
-.nav-bar li a.right {
-  background-color: rgb(255, 0, 0); /* Darker background on hover */
+.nav-bar li.left {
+  background-color: rgb(0, 31, 15); /* Darker background on hover */
   padding: 0.25rem 0.375rem;
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0.25rem 0, 100% 0, calc(100% - 0.25rem) 100%, 0 100%);
 }
 
-/* Add a hover effect */
-.nav-bar li a.left:hover {
-  background-color: rgb(89, 0, 255); /* Darker background on hover */
+.nav-bar li.mostLeft {
+  background-color: rgb(0, 31, 15); /* Darker background on hover */
   padding: 0.25rem 0.375rem;
   /* border: 0.125rem, solid, green; */
-  clip-path: polygon(0 0, calc(100% - 0.25rem) 0, 100% 100%, 0.25rem 100%);
-}
-
-.nav-bar li a.right:hover {
-  background-color: rgb(89, 0, 255); /* Darker background on hover */
-  padding: 0.25rem 0.25rem;
-  /* border: 0.125rem, solid, green; */
-  clip-path: polygon(0.25rem 0, 100% 0, calc(100% - 0.25rem) 100%, 0 100%);
-}
-
-.nav-bar li a.true {
-  background-color: rgb(74, 24, 255);
   clip-path: polygon(
-    0 0,
+    0.5rem 0,
     100% 0,
     calc(100% - 0.25rem) 100%,
     calc(0% + 0.25rem) 100%
   );
-  position: relative;
-  overflow: visible;
-  outline: rgb(89, 255, 24), solid, 0.2rem;
 }
 
-.nav-bar li a.true:hover {
-  background-color: rgb(89, 255, 24);
+.nav-bar li.right {
+  background-color: rgb(0, 31, 15); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0 0, calc(100% - 0.25rem) 0, 100% 100%, 0.25rem 100%);
+}
+
+/* Add a hover effect */
+.nav-bar li.left:hover {
+  background-color: rgb(0, 127, 79); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0.25rem 0, 100% 0, calc(100% - 0.25rem) 100%, 0 100%);
+}
+
+.nav-bar li.right:hover {
+  background-color: rgb(0, 127, 79); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(0 0, calc(100% - 0.25rem) 0, 100% 100%, 0.25rem 100%);
+}
+
+.nav-bar li.mostLeft:hover {
+  background-color: rgb(0, 127, 79); /* Darker background on hover */
+  padding: 0.25rem 0.375rem;
+  /* border: 0.125rem, solid, green; */
+  clip-path: polygon(
+    0.5rem 0,
+    100% 0,
+    calc(100% - 0.25rem) 100%,
+    calc(0% + 0.25rem) 100%
+  );
+}
+
+.nav-bar li.true {
+  background-color: rgb(0, 127, 79);
+  color: rgb(0, 31, 15);
+  padding: 0.125rem 0.1875rem;
+  clip-path: polygon(
+    calc(0% + 0.25rem) 0,
+    calc(100% - 0.25rem) 0,
+    calc(100%) calc(100%),
+    calc(0%) calc(100%)
+  );
+}
+
+.nav-bar li.trueLeft {
+  background-color: rgb(0, 127, 79);
+  color: rgb(0, 31, 15);
+  padding: 0.125rem 0.1875rem;
+  clip-path: polygon(
+    calc(0% + 0.25rem) 0,
+    calc(100% - 0.25rem) 0,
+    calc(100%) calc(100%),
+    calc(0% + 0.25rem) 100%
+  );
+}
+
+/* .nav-bar li.true {
+  background-color: rgb(0, 127, 79);
+  color: rgb(0, 31, 15);
+  padding: 0.125rem 0.1875rem;
+  clip-path: polygon(
+    calc(0) 0,
+    100% 0,
+    calc(100% - 0.25rem) calc(100% - 0.125rem),
+    calc(0% + 0.25rem) calc(100% - 0.125rem)
+  );
+} 
+  */
+
+.nav-bar li.true a {
+  background-color: rgb(0, 31, 15);
+  padding: calc(0.25rem + 0.125rem) calc(0.375rem + 0.1875rem);
+  clip-path: polygon(
+    calc(0% + 0.25rem) 0,
+    calc(100% - 0.25rem) 0,
+    calc(100%) calc(100%),
+    calc(0%) 100%
+  );
+  height: 2.4rem;
+}
+
+.nav-bar li.trueLeft a {
+  background-color: rgb(0, 31, 15);
+  padding: calc(0.25rem + 0.125rem) calc(0.375rem + 0.1875rem);
+  clip-path: polygon(
+    calc(0% + 0.1875rem) 0,
+    calc(100% - 0.25rem) 0,
+    calc(100%) calc(100%),
+    calc(0% + 0.1875rem) 100%
+  );
+  height: 2.4rem;
 }
 
 /* Content Pages */
 .page-content {
-  background-color: rgb(89, 255, 24);
-  outline: rgb(89, 255, 24), solid, 0.2rem;
-  margin: 0 0 0 0.23rem;
+  background-color: #001f0f;
+  color: rgb(0, 255, 127);
+  /* outline: rgb(89, 255, 24), solid, 0.2rem; */
+  margin: -0.125rem 0 0 0.23rem;
   max-width: 50rem;
   min-height: 30rem;
-  border: 0.2rem, solid, rgb(74, 24, 255);
+  border: 0.125rem, solid, rgb(0, 127, 79);
 }
 
 @layer utilities {
