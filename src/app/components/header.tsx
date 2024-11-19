@@ -48,7 +48,7 @@ export default function Nav() {
         setChecker(1)
         break
       default:
-        setSelectedHome('trueleft')
+        setSelectedHome('trueLeft')
         setSelectedProj1('right')
         setSelectedProj2('right')
         setSelectedProj3('right')
