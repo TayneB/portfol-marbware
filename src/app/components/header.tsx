@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 export default function Nav() {
-  let [selectedHome, setSelectedHome] = useState('true')
+  let [selectedHome, setSelectedHome] = useState('trueLeft')
   let [selectedProj1, setSelectedProj1] = useState('right')
   let [selectedProj2, setSelectedProj2] = useState('right')
   let [selectedProj3, setSelectedProj3] = useState('right')
@@ -16,7 +16,7 @@ export default function Nav() {
   if (checker === 0) {
     switch (path) {
       case '/project1':
-        setSelectedHome('left')
+        setSelectedHome('mostLeft')
         setSelectedProj1('true')
         setSelectedProj2('right')
         setSelectedProj3('right')
@@ -24,7 +24,7 @@ export default function Nav() {
         setChecker(1)
         break
       case '/project2':
-        setSelectedHome('left')
+        setSelectedHome('mostLeft')
         setSelectedProj1('left')
         setSelectedProj2('true')
         setSelectedProj3('right')
@@ -32,7 +32,7 @@ export default function Nav() {
         setChecker(1)
         break
       case '/project3':
-        setSelectedHome('left')
+        setSelectedHome('mostLeft')
         setSelectedProj1('left')
         setSelectedProj2('left')
         setSelectedProj3('true')
@@ -40,7 +40,7 @@ export default function Nav() {
         setChecker(1)
         break
       case '/about':
-        setSelectedHome('left')
+        setSelectedHome('mostLeft')
         setSelectedProj1('left')
         setSelectedProj2('left')
         setSelectedProj3('left')
@@ -48,7 +48,7 @@ export default function Nav() {
         setChecker(1)
         break
       default:
-        setSelectedHome('true')
+        setSelectedHome('trueleft')
         setSelectedProj1('right')
         setSelectedProj2('right')
         setSelectedProj3('right')
@@ -58,35 +58,35 @@ export default function Nav() {
   }
 
   function handleClickHome() {
-    setSelectedHome('true')
+    setSelectedHome('trueLeft')
     setSelectedProj1('right')
     setSelectedProj2('right')
     setSelectedProj3('right')
     setSelectedAbout('right')
   }
   function handleClick1() {
-    setSelectedHome('left')
+    setSelectedHome('mostLeft')
     setSelectedProj1('true')
     setSelectedProj2('right')
     setSelectedProj3('right')
     setSelectedAbout('right')
   }
   function handleClick2() {
-    setSelectedHome('left')
+    setSelectedHome('mostLeft')
     setSelectedProj1('left')
     setSelectedProj2('true')
     setSelectedProj3('right')
     setSelectedAbout('right')
   }
   function handleClick3() {
-    setSelectedHome('left')
+    setSelectedHome('mostLeft')
     setSelectedProj1('left')
     setSelectedProj2('left')
     setSelectedProj3('true')
     setSelectedAbout('right')
   }
   function handleClickAbout() {
-    setSelectedHome('left')
+    setSelectedHome('mostLeft')
     setSelectedProj1('left')
     setSelectedProj2('left')
     setSelectedProj3('left')
