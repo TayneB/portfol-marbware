@@ -178,12 +178,17 @@ body {
   border: 0.125rem, solid, rgb(0, 127, 79);
 }
 
+p {
+  margin: 0.5rem 0 0 1rem;
+  max-width: 48rem;
+}
+
 /* Home = portfol-marbware/src/app/page.tsx */
 h1.landing-name {
   font-size: 4rem;
   max-height: 5.6rem;
-  justify-self: center;
-  margin-left: -1rem;
+  justify-self: left;
+  margin: 0 0 0 1rem;
   border-bottom: rgb(0, 127, 79) solid 1px;
 }
 
