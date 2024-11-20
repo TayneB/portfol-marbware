@@ -5,7 +5,7 @@ import Link from 'react'
 export default function Home() {
   return (
     <div className="page-content">
-      <h1>Tayne Bilyard</h1>
+      <h1 className="landing-name">Tayne Bilyard</h1>
       <p>
         Web developer with a passion for creating apps that make you smile. I
         implement brilliant code for brilliant solutions. I originally worked on
