@@ -1,10 +1,12 @@
 import React from 'react'
+import DuckFinderzVideo from '../components/duckFinderzVideoEmbed'
 
 const Proj1Page: React.FC = () => {
   return (
     <div className="page-content">
-      <h1>Duck Finderz</h1>
-      <p>
+      <h1 className="project1-h1">Duck Finderz</h1>
+      <DuckFinderzVideo />
+      <p className="project1-p">
         For our final project with Dev Academy Aotearoa, I pitched an idea which
         was voted on and decided as the direction for the final project. The
         idea was to create an interactive and entertaining website centered
