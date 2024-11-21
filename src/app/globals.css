@@ -35,6 +35,7 @@ body {
   display: flex; /* Use flexbox for horizontal layout */
   justify-content: left; /* Space out items */
   margin-bottom: 0rem;
+  min-width: 55rem;
 }
 
 .nav-bar li {
@@ -174,6 +175,7 @@ body {
   /* outline: rgb(89, 255, 24), solid, 0.2rem; */
   margin: -0.125rem 0 0 0.23rem;
   max-width: 50rem;
+  min-width: 50rem;
   min-height: 30rem;
   border: 0.125rem, solid, rgb(0, 127, 79);
 }
