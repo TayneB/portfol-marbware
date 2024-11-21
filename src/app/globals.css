@@ -39,7 +39,7 @@ body {
 
 .nav-bar li {
   float: left;
-  min-width: 8rem;
+  min-width: 10.055rem;
 }
 
 /* Style the links */
@@ -184,12 +184,24 @@ p {
 }
 
 /* Home = portfol-marbware/src/app/page.tsx */
-h1.landing-name {
+h1.landing-h1 {
   font-size: 4rem;
   max-height: 5.6rem;
-  justify-self: left;
-  margin: 0 0 0 1rem;
+  justify-self: center;
+  margin: 1.6rem 0 0 0rem;
   border-bottom: rgb(0, 127, 79) solid 1px;
+}
+
+h2.landing-h2 {
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  font-size: 1.4rem;
+  justify-self: center;
+}
+
+p.landing-p {
+  max-width: 30rem;
+  justify-self: center;
 }
 
 @layer utilities {

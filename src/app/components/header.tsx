@@ -97,27 +97,27 @@ export default function Nav() {
       <ul>
         <li className={`${selectedHome}`}>
           <Link href="/" onClick={handleClickHome}>
-            home
+            I AM
           </Link>
         </li>
         <li className={`${selectedProj1}`}>
           <Link href="/project1" onClick={handleClick1}>
-            project 1
+            DUCK FINDERZ
           </Link>
         </li>
         <li className={`${selectedProj2}`}>
           <Link href="/project2" onClick={handleClick2}>
-            project 2
+            TIME PARSES
           </Link>
         </li>
         <li className={`${selectedProj3}`}>
           <Link href="/project3" onClick={handleClick3}>
-            project 3
+            YETAN
           </Link>
         </li>
         <li className={`${selectedAbout}`}>
           <Link href="/about" onClick={handleClickAbout}>
-            about
+            ABOUT
           </Link>
         </li>
       </ul>
