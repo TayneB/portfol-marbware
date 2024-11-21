@@ -230,6 +230,30 @@ div.video-duckFinderz iframe {
   background-color: rgb(0, 13, 8);
 }
 
+/* Proj 2 = portfol-marbware/src/app/project2 */
+.page-content-grid {
+  display: grid;
+  margin: 1rem;
+}
+
+.timeParses-h1 {
+  font-size: 3rem;
+  grid-column-start: 1;
+  margin: auto auto;
+  border-bottom: rgb(0, 127, 79) solid 2px;
+}
+
+.timeParses-image {
+  grid-column-start: 2;
+  margin: auto auto;
+  border: rgb(0, 127, 79) solid 2px;
+}
+
+.timeParses-p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
