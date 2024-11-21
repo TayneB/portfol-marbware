@@ -5,8 +5,9 @@ import Link from 'react'
 export default function Home() {
   return (
     <div className="page-content">
-      <h1>Tayne Bilyard</h1>
-      <p>
+      <h1 className="landing-h1">Tayne Bilyard</h1>
+      <h2 className="landing-h2">Web Developer</h2>
+      <p className="landing-p">
         Web developer with a passion for creating apps that make you smile. I
         implement brilliant code for brilliant solutions. I originally worked on
         an array of creative projects in 3D fabrication, from custom modular
@@ -14,7 +15,8 @@ export default function Home() {
         electronic housings + more and now I&apos;ve turned my sights to code.
         Using Javascript, React, and TypeScript (so far) to build apps that
         entertain. When I work I bring an optimistic and chipper attitude with a
-        hint of my cheeky nature to ease the tension.
+        hint of my cheeky nature to ease the tension. Check out my projects
+        above to see what I&apos;ve got done.
       </p>
     </div>
   )
