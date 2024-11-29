@@ -229,6 +229,12 @@ p.project1-p {
   justify-self: center;
 }
 
+.project1-p-ls {
+  max-width: 37rem;
+  margin-left: 3rem;
+  margin-top: -0.4rem;
+}
+
 p.project1-p a:hover {
   background-color: rgb(0, 127, 79);
 }
