@@ -270,6 +270,19 @@ h1.project3-h1 {
   max-width: 48rem;
 }
 
+/* About = portfol-marbware/src/app/about */
+h1.about-h1 {
+  font-size: 3rem;
+  margin: 0.5rem 1rem 0 0;
+  max-width: 48rem;
+  justify-self: right;
+}
+
+p.about-p {
+  justify-self: right;
+  margin: 0.5rem 1rem 0 0;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
