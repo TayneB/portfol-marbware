@@ -23,7 +23,11 @@ const Proj2Page: React.FC = () => {
           Game World of Warcraft. By inputing a characters name, server, region
           and specified encounter, the app allows user to search for the best
           parses to compare against their own with a focus on cotrolling the
-          data for encounter duration.
+          data for encounter duration. <br></br>
+          <br></br>
+          <a target="_blank" href="https://marbo.time-parses.lol/">
+            - Time Parses -
+          </a>
         </p>
       </span>
     </div>

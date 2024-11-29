@@ -16,18 +16,27 @@ const Proj1Page: React.FC = () => {
         a chrome extension which I was primarily responsible for that can be
         signed into and that inserts ducks into web pages that can then be
         clicked on to collect them for the associated username. The project
-        outcome was a total success, the chrome extension was published and
-        approved by the chrome web store and can be downloaded here.
-        https://chromewebstore.google.com/detail/duck-collection/enlefeepfkpjdifepemfoojfcbhomnp
-        m The site to sign up for a username and view ducks can be found here
-        https://duck-finderz.pushed.nz/ The Loom video website example can be
-        found here
-        https://www.loom.com/share/347847eb94ef4a2da0bc03813e62884a?sid=1b5dc7cb-416e-45
-        e2-97a9-c64f132134e8 The github repo for the extension and its continued
-        development can be found here
-        https://github.com/TayneB/duck-collector-extension The recording of the
-        final presentation and overview of the project can be found here
-        https://youtu.be/dWgESJXzoQo
+        outcome was a total success! <br></br> <br></br>{' '}
+        <a
+          target="_blank"
+          href="https://chromewebstore.google.com/detail/duck-collection/enlefeepfkpjdifepemfoojfcbhomnpm"
+        >
+          - The chrome extension is published on the chrome web store -
+        </a>{' '}
+        <br></br> <br></br>
+        <a href="">- NO LONGER HOSTED | Duck Finderz Home -</a> <br></br>
+        <br></br>
+        <a
+          target="_blank"
+          href="https://github.com/TayneB/duck-collector-extension"
+        >
+          - The github repo for the extension and its continued development -
+        </a>
+        <br></br>
+        <br></br>
+        <a target="_blank" href="https://youtu.be/dWgESJXzoQo">
+          - The Youtube recording of Duck Finderz presentation -
+        </a>
       </p>
     </div>
   )

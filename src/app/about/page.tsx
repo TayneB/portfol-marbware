@@ -7,7 +7,7 @@ const AboutPage: React.FC = () => {
       <p className="about-p">
         This portfolio is built in nextjs with typescript.
       </p>
-      <p className="about-p">Hosted with the power of Amplify!</p>
+      <p className="about-p">Hosted with the power of AWS Amplify!</p>
     </div>
   )
 }
