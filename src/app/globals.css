@@ -16,6 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: 'OCR A Extended';
+  src: url('/fonts/OCRAEXT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 1rem;
 
@@ -29,6 +36,7 @@ body {
 }
 
 .nav-bar {
+  font-family: 'OCR A Extended', monospace;
   list-style-type: none; /* Remove bullets */
   background-color: #000d08; /* Dark background */
   overflow: visible; /* Clear floats */
@@ -49,21 +57,21 @@ body {
   color: rgb(0, 255, 127); /* White text */
 
   text-align: center;
-  padding: 0.25rem 0.625rem; /* Padding around the links */
+  padding: 0.5rem 1rem; /* Padding around the links */
   text-decoration: none; /* Remove underline */
   box-sizing: border-box;
 }
 
 .nav-bar li.left {
   background-color: rgb(0, 31, 15); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
+
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0.25rem 0, 100% 0, calc(100% - 0.25rem) 100%, 0 100%);
 }
 
 .nav-bar li.mostLeft {
   background-color: rgb(0, 31, 15); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
+
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(
     0.5rem 0,
@@ -75,7 +83,7 @@ body {
 
 .nav-bar li.right {
   background-color: rgb(0, 31, 15); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
+
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0 0, calc(100% - 0.25rem) 0, 100% 100%, 0.25rem 100%);
 }
@@ -83,21 +91,21 @@ body {
 /* Add a hover effect */
 .nav-bar li.left:hover {
   background-color: rgb(0, 127, 79); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
+
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0.25rem 0, 100% 0, calc(100% - 0.25rem) 100%, 0 100%);
 }
 
 .nav-bar li.right:hover {
   background-color: rgb(0, 127, 79); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
+
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(0 0, calc(100% - 0.25rem) 0, 100% 100%, 0.25rem 100%);
 }
 
 .nav-bar li.mostLeft:hover {
   background-color: rgb(0, 127, 79); /* Darker background on hover */
-  padding: 0.25rem 0.375rem;
+
   /* border: 0.125rem, solid, green; */
   clip-path: polygon(
     0.5rem 0,
@@ -170,6 +178,7 @@ body {
 
 /* Content Pages */
 .page-content {
+  font-family: 'OCR A Extended', monospace;
   background-color: #001f0f;
   color: rgb(0, 255, 127);
   /* outline: rgb(89, 255, 24), solid, 0.2rem; */
@@ -190,7 +199,7 @@ h1.landing-h1 {
   font-size: 4rem;
   max-height: 5.6rem;
   justify-self: center;
-  margin: 1.6rem 0 0 0rem;
+  margin: 1.6rem 2.5rem 0 0rem;
   border-bottom: rgb(0, 127, 79) solid 1px;
 }
 
@@ -202,7 +211,7 @@ h2.landing-h2 {
 }
 
 p.landing-p {
-  max-width: 30rem;
+  max-width: 46rem;
   justify-self: center;
 }
 
@@ -220,6 +229,16 @@ p.project1-p {
   justify-self: center;
 }
 
+.project1-p-ls {
+  max-width: 37rem;
+  margin-left: 3rem;
+  margin-top: -0.4rem;
+}
+
+p.project1-p a:hover {
+  background-color: rgb(0, 127, 79);
+}
+
 div.video-duckFinderz {
   margin: 0 auto;
   height: 1rem;
@@ -228,6 +247,24 @@ div.video-duckFinderz {
 div.video-duckFinderz iframe {
   border: rgb(0, 127, 79) solid 2px;
   background-color: rgb(0, 13, 8);
+}
+
+.spinner-animation {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid rgb(0, 127, 79);
+  border-top: 0.25rem solid rgb(0, 255, 127);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Proj 2 = portfol-marbware/src/app/project2 */
@@ -252,6 +289,35 @@ div.video-duckFinderz iframe {
 .timeParses-p {
   grid-column-start: 1;
   grid-column-end: 3;
+  margin-bottom: 0.7rem;
+}
+
+.timeParses-p a {
+  margin-left: 18rem;
+}
+
+.timeParses-p a:hover {
+  background-color: rgb(0, 127, 79);
+}
+
+/* Proj 3 = portfol-marbware/src/app/project3 */
+h1.project3-h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0 0 1rem;
+  max-width: 48rem;
+}
+
+/* About = portfol-marbware/src/app/about */
+h1.about-h1 {
+  font-size: 3rem;
+  margin: 0.5rem 1rem 0 0;
+  max-width: 48rem;
+  justify-self: right;
+}
+
+p.about-p {
+  justify-self: right;
+  margin: 0.5rem 1rem 0 0;
 }
 
 @layer utilities {

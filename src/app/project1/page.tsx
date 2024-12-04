@@ -7,27 +7,47 @@ const Proj1Page: React.FC = () => {
       <h1 className="project1-h1">Duck Finderz</h1>
       <DuckFinderzVideo />
       <p className="project1-p">
-        For our final project with Dev Academy Aotearoa, I pitched an idea which
-        was voted on and decided as the direction for the final project. The
-        idea was to create an interactive and entertaining website centered
-        around collecting ducks from webpages. The project was implemented in
-        two ways, the first is a site that lets you sign up for an account,
-        receive a username and view the ducks you have collected. The second is
-        a chrome extension which I was primarily responsible for that can be
-        signed into and that inserts ducks into web pages that can then be
-        clicked on to collect them for the associated username. The project
-        outcome was a total success, the chrome extension was published and
-        approved by the chrome web store and can be downloaded here.
-        https://chromewebstore.google.com/detail/duck-collection/enlefeepfkpjdifepemfoojfcbhomnp
-        m The site to sign up for a username and view ducks can be found here
-        https://duck-finderz.pushed.nz/ The Loom video website example can be
-        found here
-        https://www.loom.com/share/347847eb94ef4a2da0bc03813e62884a?sid=1b5dc7cb-416e-45
-        e2-97a9-c64f132134e8 The github repo for the extension and its continued
-        development can be found here
-        https://github.com/TayneB/duck-collector-extension The recording of the
-        final presentation and overview of the project can be found here
-        https://youtu.be/dWgESJXzoQo
+        For our final project at Dev Academy Aotearoa, I pitched an idea that
+        was voted the top choice for development. The concept was to create an
+        interactive and entertaining platform centered around &#34;duck
+        collecting&#34;. This project aimed to combine gamification with web
+        interaction, and it was implemented in two main components: <br></br>
+        <p className="project1-p-ls">
+          <br></br>1. Interactive Website: A user-friendly site where users can
+          sign up for an account, receive a unique username, and view the
+          collection of ducks they&apos;ve gathered. This component served as
+          the hub for managing user progress and engagement. <br></br>
+          <br></br> 2. Chrome Extension: I led the development of this feature,
+          which allows users to sign in with their account and experience an
+          immersive &#34;duck hunt&#34; across the web. The extension inserts
+          collectible ducks into various web pages, which users can click to add
+          to their collection. <br></br>
+          <br></br>{' '}
+        </p>
+        The project was a resounding success, delivering both functionality and
+        fun. It demonstrated our ability to integrate frontend development, user
+        authentication, and creative design to create a seamless and engaging
+        user experience. <br></br> <br></br>{' '}
+        <a
+          target="_blank"
+          href="https://chromewebstore.google.com/detail/duck-collection/enlefeepfkpjdifepemfoojfcbhomnpm"
+        >
+          - The chrome extension is published on the chrome web store -
+        </a>{' '}
+        <br></br> <br></br>
+        <a href="">- NO LONGER HOSTED | Duck Finderz Home -</a> <br></br>
+        <br></br>
+        <a
+          target="_blank"
+          href="https://github.com/TayneB/duck-collector-extension"
+        >
+          - The github repo for the extension and its continued development -
+        </a>
+        <br></br>
+        <br></br>
+        <a target="_blank" href="https://youtu.be/dWgESJXzoQo">
+          - The Youtube recording of Duck Finderz presentation -
+        </a>
       </p>
     </div>
   )

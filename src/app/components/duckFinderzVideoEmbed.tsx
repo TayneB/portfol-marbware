@@ -1,8 +1,14 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
 const DuckFinderzVideo = () => {
+  const [isLoading, setIsLoading] = useState(true)
   const embedUrl =
     'https://www.loom.com/embed/347847eb94ef4a2da0bc03813e62884a?sid=87c05796-75f8-4723-a718-fe81d8af6247'
+  const handleVideoLoad = () => {
+    setIsLoading(false)
+  }
+
   return (
     <div
       className="video-duckFinderz"
@@ -13,10 +19,25 @@ const DuckFinderzVideo = () => {
         overflow: 'hidden',
       }}
     >
+      {isLoading && (
+        <div
+          className="spinner"
+          style={{
+            position: 'absolute',
+            top: '40%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 10,
+          }}
+        >
+          <div className="spinner-animation"></div>
+        </div>
+      )}
       <iframe
         src={embedUrl}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
+        onLoad={handleVideoLoad}
         style={{
           position: 'absolute',
           top: 0,
