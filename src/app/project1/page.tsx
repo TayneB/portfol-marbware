@@ -12,7 +12,7 @@ const Proj1Page: React.FC = () => {
         interactive and entertaining platform centered around &#34;duck
         collecting&#34;. This project aimed to combine gamification with web
         interaction, and it was implemented in two main components: <br></br>
-        <p className="project1-p-ls">
+        <span className="project1-p-ls">
           <br></br>1. Interactive Website: A user-friendly site where users can
           sign up for an account, receive a unique username, and view the
           collection of ducks they&apos;ve gathered. This component served as
@@ -23,7 +23,7 @@ const Proj1Page: React.FC = () => {
           collectible ducks into various web pages, which users can click to add
           to their collection. <br></br>
           <br></br>{' '}
-        </p>
+        </span>
         The project was a resounding success, delivering both functionality and
         fun. It demonstrated our ability to integrate frontend development, user
         authentication, and creative design to create a seamless and engaging
